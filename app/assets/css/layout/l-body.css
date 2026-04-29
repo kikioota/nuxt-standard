@@ -1,0 +1,12 @@
+/*
+- layout -
+  bodyタグ設定
+*/
+
+.l-body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}

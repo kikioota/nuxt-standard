@@ -1,0 +1,23 @@
+/*
+- base -
+ベースとなるCSS
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+body {
+  background-color: white;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+  text-autospace: normal;
+  word-break: normal;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}

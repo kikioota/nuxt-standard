@@ -1,0 +1,10 @@
+/*
+- layout -
+  mainタグ設定
+*/
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+}

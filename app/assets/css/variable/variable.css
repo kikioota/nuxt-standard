@@ -1,0 +1,46 @@
+/*
+- variable -
+変数などを定義
+*/
+
+/* メディアクエリ */
+@custom-media --min-md (min-width:768px);
+@custom-media --min-lg (min-width:1024px);
+@custom-media --max-md (max-width:767px);
+@custom-media --max-lg (max-width:1024px);
+
+
+/* tailwind変数 */
+@theme {
+  /* テーマカラー */
+  --color-theme: #3b82f6;
+  --color-sub: #10b981;
+  --color-accent: #f59e0b;
+  --color-white: #ffffff;
+
+  /* テキストカラー */
+  --color-text: #333333;
+  --color-text-muted: #6b7280;
+
+  /* 背景 */
+  --color-bg: #ddd;
+  --color-bg-muted: #f9fafb;
+
+  /* グレー */
+  --color-gray: #cccccc;
+  --color-gray-dddddd: #dddddd;
+
+  /* フォント */
+  --font-family-sans: 'Noto Sans JP', sans-serif;
+  --font-family-serif: 'Noto Serif JP', serif;
+
+  /* フォントサイズ */
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-base: 1.6rem;
+  --font-size-lg: 1.8rem;
+  --font-size-xl: 2.2rem;
+
+
+
+}

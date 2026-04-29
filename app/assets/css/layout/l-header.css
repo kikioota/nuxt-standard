@@ -1,0 +1,10 @@
+/*
+- layout -
+  headerタグ設定
+*/
+
+.l-header {
+  grid-area: header;
+  position: relative;
+  width: 100%;
+}

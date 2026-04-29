@@ -1,0 +1,20 @@
+/*
+- layout -
+  footerタグ設定
+*/
+
+.l-footer {
+  grid-area: footer;
+  width: 100%;
+}
+
+.l-footer-copy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+
+  @media (--min-md) {
+    background-color: var(--color-theme);
+  }
+}

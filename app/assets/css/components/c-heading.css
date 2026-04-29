@@ -1,0 +1,22 @@
+/*
+component
+/ 見出し /
+*/
+
+
+.c-heading-primary {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.c-heading-primary__title {
+  font-size: clamp(2.2rem, calc(28 / 768 * 100vw), 2.8rem);
+  font-weight: 700;
+}
+
+.c-heading-primary__en {
+  font-size: clamp(1.4rem, calc(16 / 768 * 100vw), 1.6rem);
+  font-weight: 700;
+}

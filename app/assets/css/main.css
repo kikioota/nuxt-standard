@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  /* variable */
+  @import "./variable/variable.css";
+  @import "./variable/base.css";
+  
+}
+
+@layer components {
+
+  /* layout */
+  @import "./layout/l-body.css";
+  @import "./layout/l-header.css";
+  @import "./layout/l-main.css";
+  @import "./layout/l-footer.css";
+
+  /* component */
+  @import "./components/c-heading.css";
+
+
+}
