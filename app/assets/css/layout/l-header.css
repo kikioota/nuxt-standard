@@ -17,12 +17,12 @@
   top: 0;
   padding: 0 2rem;
   background-color: var(--color-white);
+  display: flex;
+  align-items: center;
 
   @media (--min-lg) {
     position: static;
     height: 10rem;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 1rem 4rem;
   }

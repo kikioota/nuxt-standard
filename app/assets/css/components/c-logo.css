@@ -1,0 +1,21 @@
+/*
+component
+----- ロゴ -----
+*/
+
+.c-logo {
+
+}
+
+.c-logo__link {
+  display: block;
+  transition: opacity 0.4s ease;
+  will-change: opacity;
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+}
