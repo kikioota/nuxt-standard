@@ -1,10 +1,17 @@
 @import "tailwindcss";
 
+/* メディアクエリ */
+@custom-media --min-md (width >= 768px);
+@custom-media --min-lg (width >= 1024px);
+@custom-media --max-container (width < 1170px);
+@custom-media --max-md (width < 768px);
+@custom-media --max-lg (width < 1024px);
+
 @layer base {
   /* variable */
   @import "./variable/variable.css";
   @import "./variable/base.css";
-  
+
 }
 
 @layer components {
@@ -14,9 +21,11 @@
   @import "./layout/l-header.css";
   @import "./layout/l-main.css";
   @import "./layout/l-footer.css";
+  @import "./layout/l-nav.css";
+  @import "./layout/l-hero.css";
 
   /* component */
   @import "./components/c-heading.css";
-
+  @import "./components/c-btn.css";
 
 }

@@ -8,3 +8,45 @@
   position: relative;
   width: 100%;
 }
+
+.l-header-main {
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 2rem;
+  background-color: var(--color-white);
+
+  @media (--min-lg) {
+    position: static;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+  }
+}
+
+.l-header-logo {
+  flex: 0 0 auto;
+  max-width: 100%;
+  width: 12rem;
+
+  @media (--min-lg) {
+    width: max-content;
+  }
+}
+
+.l-header-nav {
+  display: none;
+  height: 100%;
+
+  @media (--min-lg) {
+    display: block;
+  }
+}
+
+.l-header-nav__wrap {
+  height: 100%;
+}

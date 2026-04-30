@@ -1,0 +1,35 @@
+/*
+- layout -
+  ナビゲーション
+*/
+
+.l-nav-global {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  height: 100%;
+}
+
+.l-nav-global__item {
+
+}
+
+.l-nav-global__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  height: 100%;
+  transition: color 0.4s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--color-theme);
+    }
+  }
+}
+
+.l-nav-global__link-label {
+  font-weight: 500;
+}

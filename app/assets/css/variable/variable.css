@@ -3,11 +3,6 @@
 変数などを定義
 */
 
-/* メディアクエリ */
-@custom-media --min-md (min-width:768px);
-@custom-media --min-lg (min-width:1024px);
-@custom-media --max-md (max-width:767px);
-@custom-media --max-lg (max-width:1024px);
 
 
 /* tailwind変数 */
@@ -41,6 +36,41 @@
   --font-size-lg: 1.8rem;
   --font-size-xl: 2.2rem;
 
+  /* 行間（leading-） */
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.8;
+  --leading-relaxed: 1.8;
+  --leading-loose: 2;
+
+  /* 文字間隔（tracking-） */
+  --tracking-tight: 0.05em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.1em;
+
+  /* z-index（z-） */
+  --z-index-footer: 1000;
+  --z-index-nav: 1010;
+  --z-index-content: 1020;
+  --z-index-pagetop: 1030;
+  --z-index-header-base: 1040;
+  --z-index-drawer: 1060;
+  --z-index-header: 1060;
+  --z-index-guide: 1065;
+  --z-index-trigger: 1070;
+  --z-index-loading: 1080;
+  --z-index-debug: 1090;
+}
 
 
+/* 汎用プロパティ */
+:root {
+  /* cubic-bezier */
+  --cb: cubic-bezier(0.8, 0, 0.24, 1);
+
+  /* line-height ハーフ・レディングの打ち消し */
+  --leading-trim: calc((1em - 1lh) / 2);
+
+  /* ヘッダー高さ */
+  --header-height: 6rem;
 }

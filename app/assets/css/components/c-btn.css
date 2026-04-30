@@ -1,0 +1,28 @@
+/*
+component
+----- ボタン -----
+*/
+
+
+.c-btn-primary {
+  --btn-bg: var(--color-theme);
+  --btn-text: var(--color-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50vh;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  max-width: 100%;
+  position: relative;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  border: 2px solid var(--btn-bg);
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--btn-text);
+      color: var(--btn-bg);
+    }
+  }
+}
