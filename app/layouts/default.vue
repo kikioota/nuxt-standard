@@ -1,6 +1,6 @@
 <template>
   <div class="l-body" id="body">
-    <LayoutHeader />
+    <LayoutHeader className="" />
 
     <main class="l-main">
 
@@ -12,5 +12,8 @@
     </main>
 
     <LayoutFooter />
+
+    <!-- 不要な場合削除 -->
+    <LayoutHeaderMain className="l-header-main--fixed" />
   </div>
 </template>

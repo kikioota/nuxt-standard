@@ -50,3 +50,17 @@
 .l-header-nav__wrap {
   height: 100%;
 }
+
+
+/* 追従バナー */
+.l-header-main--fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: var(--z-index-header);
+  transform: translateY(-100%);
+
+  @media (--max-md) {
+    display: none;
+  }
+}

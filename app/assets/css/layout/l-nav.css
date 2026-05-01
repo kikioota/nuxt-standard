@@ -6,8 +6,11 @@
 .l-nav-global {
   list-style: none;
   padding-left: 0;
-  display: flex;
-  height: 100%;
+
+  @media (--min-lg) {
+    display: flex;
+    height: 100%;
+  }
 }
 
 .l-nav-global__item {
@@ -15,21 +18,42 @@
 }
 
 .l-nav-global__link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 1rem 2rem;
-  height: 100%;
-  transition: color 0.4s ease-in-out;
 
-  @media (any-hover: hover) {
-    &:hover {
-      color: var(--color-theme);
+  @media (--min-lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    height: 100%;
+    transition: color 0.4s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--color-theme);
+      }
     }
   }
+
 }
 
 .l-nav-global__link-label {
-  font-weight: 500;
+  @media (--min-lg) {
+    font-weight: 500;
+  }
+}
+
+
+/* ドロワーメニュー内 */
+.l-drawer {
+  .l-nav-global {
+    padding-top: 6rem;
+    padding-inline: 1rem;
+  }
+
+  .l-nav-global__link {
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    display: block;
+  }
 }
