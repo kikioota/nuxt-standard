@@ -6,12 +6,7 @@ const props = defineProps({
   },
 })
 
-const isOpen = ref(false)
-
-watch(isOpen, (newValue) => {
-  document.body.style.overflow = newValue ? 'hidden' : ''
-})
-
+c
 const clickOpen = () => {
   isOpen.value = !isOpen.value
 }
