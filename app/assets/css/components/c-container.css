@@ -1,0 +1,39 @@
+/*
+component
+----- コンテナ -----
+*/
+
+.c-container {
+  margin-inline: auto;
+  max-width: calc(100% - 4rem);
+  width: var(--width-container);
+}
+
+.c-container--lg {
+  width: var(--width-container-large);
+}
+
+.c-container--md {
+  width: var(--width-container-medium);
+}
+
+.c-container--sm {
+  width: var(--width-container-small);
+}
+
+.c-container--xs {
+  width: var(--width-container-xsmall);
+}
+
+.c-container--design {
+  width: var(--width-container-design);
+}
+
+.c-container--full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c-container--max-full {
+  max-width: 100%;
+}

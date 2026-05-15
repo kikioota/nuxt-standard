@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --open",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "@tailwindcss/vite": "^4.2.4",
     "nuxt": "^4.4.2",
     "tailwindcss": "^4.2.4",

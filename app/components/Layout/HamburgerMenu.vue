@@ -1,4 +1,8 @@
 <script setup>
+import { ref, watchEffect, onUnmounted } from 'vue'
+
+const isOpen = ref(false)
+
 const props = defineProps({
   className: {
     type: String,
@@ -6,7 +10,18 @@ const props = defineProps({
   },
 })
 
-c
+watchEffect(() => {
+  if (import.meta.client) {
+    document.body.style.overflow = isOpen.value ? 'hidden' : ''
+  }
+})
+
+onUnmounted(() => {
+  if (import.meta.client) {
+    document.body.style.overflow = ''
+  }
+})
+
 const clickOpen = () => {
   isOpen.value = !isOpen.value
 }

@@ -1,0 +1,42 @@
+/*
+component
+----- TOPへ戻るボタン -----
+*/
+
+.c-pagetop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--color-sub);
+  color: var(--color-white);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: var(--z-index-pagetop);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+
+  @media (--min-lg) {
+    width: 6rem;
+  }
+
+  @media (any-hover: hover) {
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.07);
+    }
+  }
+}
+
+.c-pagetop__label {
+  font-weight: 500;
+}
+
+.c-pagetop.is-show {
+  opacity: 1;
+  visibility: visible;
+}

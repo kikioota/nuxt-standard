@@ -1,0 +1,79 @@
+{
+  "omd": {
+    "scope": "css",
+    "prefix": "min-md:nuxt",
+    "body": [
+      "@media (--min-md) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "--min-md"
+  },
+  "olg": {
+    "scope": "css",
+    "prefix": "min-lg:nuxt",
+    "body": [
+      "@media (--min-lg) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "--min-lg"
+  },
+  "bmd": {
+    "scope": "css",
+    "prefix": "max-md:nuxt",
+    "body": [
+      "@media (--max-md) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "--max-md"
+  },
+  "blg": {
+    "scope": "css",
+    "prefix": "max-lg:nuxt",
+    "body": [
+      "@media (--max-lg) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "--max-lg"
+  },
+  "tategaki": {
+    "scope": "css",
+    "prefix": "tategaki:nuxt",
+    "body": [
+      "-webkit-writing-mode: vertical-rl;",
+      "-ms-writing-mode: tb-rl;",
+      "writing-mode: vertical-rl;",
+      "font-feature-settings: normal;"
+    ],
+    "description": "tategaki"
+  },
+  "font-smoothing": {
+    "scope": "css",
+    "prefix": "font-smoothing:nuxt",
+    "body": [
+      "-webkit-font-smoothing: antialiased;",
+      "-moz-osx-font-smoothing: grayscale;"
+    ],
+    "description": "font-smoothing"
+  },
+  "font-smoothing-n": {
+    "scope": "css",
+    "prefix": "font-smoothing-n:nuxt",
+    "body": [
+      "-webkit-font-smoothing: subpixel-antialiased;",
+      "-moz-osx-font-smoothing: auto;"
+    ],
+    "description": "font-smoothing-n"
+  },
+  "karning": {
+    "scope": "css",
+    "prefix": "karning:nuxt",
+    "body": [
+      "font-feature-settings: 'palt' 1;"
+    ],
+    "description": "karning"
+  },
+}

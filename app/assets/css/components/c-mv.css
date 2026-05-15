@@ -1,0 +1,25 @@
+/*
+component
+----- メインビジュアル -----
+*/
+
+.c-mv {
+  height: 44rem;
+
+  @media (--min-md) {
+    height: 60rem;
+  }
+
+  @media (--min-lg) {
+    height: calc(100dvh - 10rem);
+    min-height: 77rem;
+  }
+
+  .splide {
+    height: 100%;
+  }
+
+  .splide__track {
+    height: 100%;
+  }
+}

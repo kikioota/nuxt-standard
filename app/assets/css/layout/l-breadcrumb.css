@@ -1,0 +1,46 @@
+/*
+- layout -
+  パンくずリスト
+*/
+
+.l-breadcrumb {
+  padding-block: 1.5rem;
+  line-height: 1.2;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.l-breadcrumb__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  width: 100%;
+  max-width: calc(100% - 4rem);
+  margin-inline: auto;
+  gap: 0 1.5rem;
+  white-space: nowrap;
+}
+
+.l-breadcrumb__item {
+  flex: 0 0 auto;
+}
+
+.l-breadcrumb__item:not(:last-of-type) {
+  &::after {
+    content: '/';
+    display: inline-block;
+    margin-left: 1.5rem;
+    color: var(--color-text);
+  }
+}
+
+.l-breadcrumb__link {
+  transition: color 0.4s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--color-theme);
+      text-decoration: underline;
+    }
+  }
+}

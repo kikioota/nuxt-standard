@@ -1,0 +1,40 @@
+/*
+component
+----- アコーディオン -----
+*/
+
+.c-accordion {
+  overflow: hidden;
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+}
+
+.c-accordion__summary {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-sub);
+  color: var(--color-white);
+}
+
+.c-accordion__sumary-label {
+  display: block;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c-accordion__content {
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  will-change: height;
+}
+
+.c-accordion.is-open {
+  .c-accordion__content {
+
+  }
+}

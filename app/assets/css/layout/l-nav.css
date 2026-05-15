@@ -14,7 +14,7 @@
 }
 
 .l-nav-global__item {
-
+  position: relative;
 }
 
 .l-nav-global__link {
@@ -55,5 +55,43 @@
     padding: 1.5rem 1rem;
     font-size: 1.6rem;
     display: block;
+  }
+}
+
+/* ドロップダウンメニュー */
+@media (--min-lg) {
+  .l-nav-dropdown {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: var(--color-white);
+    transform: translateY(100%);
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    z-index: var(--z-index-header);
+  }
+
+  .l-nav-dropdown.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .l-nav-dropdown__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .l-nav-dropdown__link {
+    display: block;
+    padding: 1rem;
+    transition: color 0.4s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--color-theme);
+      }
+    }
   }
 }

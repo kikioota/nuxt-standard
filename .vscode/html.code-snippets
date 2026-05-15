@@ -1,0 +1,71 @@
+{
+  "DImage": {
+    "scope": "html,nuxt",
+    "prefix": "image.nuxt",
+    "body": [
+      "<DImage",
+      "\ttype=\"jpg$1\"",
+      "\tsrc=\"$2\"",
+      "\twidth=\"$3\"",
+      "\theight=\"$4\"",
+      "\tclassName=\"$5\"",
+      "\talt=\"$6\"",
+      "\t:lazy=\"true$7\"",
+      "/>"
+    ],
+    "description": "DImage component"
+  },
+  "Container": {
+    "scope": "html,nuxt",
+    "prefix": "container:nuxt",
+    "body": [
+      "<Container",
+      "\tsize=\"$1\"",
+      "\ttag=\"$2\"",
+      "\tclassName=\"$3\"",
+      ">",
+      "\t$4",
+      "</Container>"
+    ],
+    "description": "Container component"
+  },
+  "Flex": {
+    "scope": "vue,html",
+    "prefix": "flex:nuxt",
+    "body": [
+      "<Flex tag=\"div\" className=\"[--gap-x:${1:1.5rem}] [--gap-y:${2:1.5rem}]\" wrapClass=\"${3}\">",
+      "  <div class=\"w-full md:w-1/2\">",
+      "    $4",
+      "  </div>",
+      "  <div class=\"w-full md:w-1/2\">",
+      "    $5",
+      "  </div>",
+      "</Flex>$0"
+    ],
+    "description": "Flex component"
+  },
+  "inline-block": {
+    "scope": "html,nuxt",
+    "prefix": "inline-block:nuxt",
+    "body": [
+      "<span class=\"inline-block\"></span>",
+    ],
+    "description": "inline-block"
+  },
+  "a:blank": {
+    "scope": "html,nuxt",
+    "prefix": "a:blank:nuxt",
+    "body": [
+      "<a href=\"\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\"></a>",
+    ],
+    "description": "a-blank"
+  },
+  "a:tel": {
+    "scope": "html,nuxt",
+    "prefix": "a:tel:nuxt",
+    "body": [
+      "<a href=\"tel:\" class=\"\"></a>",
+    ],
+    "description": "a-tel"
+  },
+}

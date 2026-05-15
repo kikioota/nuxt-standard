@@ -5,6 +5,21 @@ const props = defineProps({
     default: "",
   }
 })
+
+const isShow = ref(false)
+
+const isDesktop = () => window.innerWidth >= 1024
+
+const doropdownOpen = () => {
+  if (!isDesktop()) return
+  isShow.value = true
+}
+
+const dropdownClose = () => {
+  if (!isDesktop()) return
+  isShow.value = false
+}
+
 </script>
 
 <template>
@@ -28,10 +43,24 @@ const props = defineProps({
         </a>
       </li>
 
-      <li class="l-nav-global__item">
-        <a href="/contact/" class="l-nav-global__link">
-          <span class="l-nav-global__link-label">お問い合わせ</span>
-        </a>
+      <li class="l-nav-global__item" @mouseover="doropdownOpen" @mouseout="dropdownClose" @focusin="doropdownOpen" @focusout="dropdownClose">
+        <button :class="['l-nav-global__link']">
+          <span class="l-nav-global__link-label">ドロップダウン</span>
+        </button>
+
+        <div :class="['l-nav-dropdown', {'is-show' : isShow} ]">
+          <ul class="l-nav-dropdown__list">
+            <li class="l-nav-dropdown__item">
+              <a href="/" class="l-nav-dropdown__link">メニュー01</a>
+            </li>
+            <li class="l-nav-dropdown__item">
+              <a href="/" class="l-nav-dropdown__link">メニュー02</a>
+            </li>
+            <li class="l-nav-dropdown__item">
+              <a href="/" class="l-nav-dropdown__link">メニュー03</a>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </nav>

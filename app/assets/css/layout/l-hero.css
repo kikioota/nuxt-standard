@@ -1,0 +1,52 @@
+/*
+- layout -
+  ヒーロー内のスタイル
+*/
+
+.l-hero {
+  width: 100%;
+  height: 14rem;
+  background-color: var(--color-gray);
+  line-height: 1.2;
+  margin-top: 6rem;
+  position: relative;
+
+  @media (--min-lg) {
+    height: 20rem;
+    margin-top: 0;
+  }
+}
+
+.l-hero__wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.l-hero__title {
+  font-size: clamp(2.2rem, calc(22 / 375 * 100vw), 3.2rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.l-hero__sub {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: clamp(1.4rem, calc(14 / 375 * 100vw), 1.6rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.l-hero__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}

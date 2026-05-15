@@ -26,3 +26,7 @@ component
     }
   }
 }
+
+.c-btn-primary__label {
+  font-weight: 700;
+}

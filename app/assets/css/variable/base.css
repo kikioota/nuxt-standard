@@ -378,6 +378,7 @@ html {
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
   scrollbar-gutter: stable; /* スクロールバー表示/非表示時のレイアウトシフト防止 */
+  /* scroll-behavior: smooth; */
 
   &:has(:modal) {
     overflow: hidden;

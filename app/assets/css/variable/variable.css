@@ -7,6 +7,15 @@
 
 /* tailwind変数 */
 @theme {
+
+  /* コンテナコンポーネントの幅 */
+  --width-container-design: 1400px; /* デザインカンプの最大幅 */
+  --width-container: 1170px; /* メインコンテンツの幅 */
+  --width-container-large: 1280px; /* ラージコンテンツの幅 */
+  --width-container-medium: 970px; /* ミディアムコンテンツの幅 */
+  --width-container-small: 770px; /* スモールコンテンツの幅 */
+  --width-container-xsmall: 570px; /* スモールコンテンツの幅 */
+
   /* テーマカラー */
   --color-theme: #3b82f6;
   --color-sub: #10b981;
