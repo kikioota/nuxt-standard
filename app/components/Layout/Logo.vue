@@ -1,4 +1,7 @@
 <script setup>
+
+const { root } = useBasePath()
+
 const props = defineProps({
   className: {
     type: String,
@@ -13,8 +16,8 @@ const props = defineProps({
 
 <template>
   <component :is="props.tag" :class="`c-logo ${className}`">
-    <a href="/" class="c-logo__link">
-      <ImgNormal type="svg" src="/_nuxt/assets/images/common/logo" width="200" height="56" alt="ロゴ" className="c-logo__img" />
+    <a :href="root('/')" class="c-logo__link">
+      <ImgNormal type="svg" src="/images/common/logo" width="200" height="56" alt="ロゴ" className="c-logo__img" />
       <span class="sr-only">ロゴ</span>
     </a>
   </component>

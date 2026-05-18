@@ -1,4 +1,8 @@
 <script setup>
+
+const config = useRuntimeConfig()
+const base = config.app.baseURL
+
 const props = defineProps({
   src: {
     type: String,
@@ -31,12 +35,16 @@ const props = defineProps({
 
 })
 
+const resolvedSrc = computed(() => {
+  return `${base}${props.src.replace(/^\//, '')}`
+})
+
 </script>
 
 <template>
   <img
-    :src="`${src}.${type}`"
-    :srcset="`${src}@2x.${type} 2x`"
+    :src="`${resolvedSrc}.${type}`"
+    :srcset="`${resolvedSrc}@2x.${type} 2x`"
     :width="width"
     :height="height"
     :alt="alt"

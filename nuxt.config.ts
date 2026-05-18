@@ -18,7 +18,19 @@ export default defineNuxtConfig({
       'autoprefixer': {},
     }
   },
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: true,  // ← 全リンクを自動クロール
+      routes: ['/'],
+    },
+    output: {
+      publicDir: 'dist'  // ← 出力先をdistに
+    }
+  },
   app: {
+    baseURL: '/nuxt-training/',
+    buildAssetsDir: '/_nuxt/', 
     head: {
       htmlAttrs: {
         lang: 'ja'

@@ -12,6 +12,6 @@
       <span v-if="subTitle" class="l-hero__sub" v-html="subTitle"></span>
     </div>
 
-    <DImage v-if="image" type="jpg" :src="`/_nuxt/assets/images/hero/${image}`" width="1400" height="200" alt="" :lazy="false" className="l-hero__bg" />
+    <DImage v-if="image" type="jpg" :src="`/images/hero/${image}`" width="1400" height="200" alt="" :lazy="false" className="l-hero__bg" />
   </div>
 </template>

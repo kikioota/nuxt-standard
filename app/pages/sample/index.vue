@@ -79,7 +79,7 @@ definePageMeta({
 
     <DImage
       type="jpg"
-      src="/_nuxt/assets/images/sample/img-about"
+      src="/images/sample/img-about"
       width="500"
       height="300"
       alt="サンプル画像"
@@ -89,7 +89,7 @@ definePageMeta({
 
     <DPicture
       type="jpg"
-      src="/_nuxt/assets/images/sample/img-about"
+      src="/images/sample/img-about"
       width="500"
       height="300"
       alt="サンプル画像"

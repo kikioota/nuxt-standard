@@ -1,5 +1,8 @@
 <script setup>
 
+const { root } = useBasePath()
+
+
 const props = defineProps({
   className: {
     type: String,
@@ -16,7 +19,7 @@ const props = defineProps({
 
 
 <template>
-  <a :href="props.href" :class="['c-btn-primary', props.className]">
+  <a :href="root(props.href)" :class="['c-btn-primary', props.className]">
     <span class="c-btn-primary__label">
       <slot />
     </span>
